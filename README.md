@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Trello Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Demo](#demo)
+- [Usage](#usage)
+- [Task Details](#task-details)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Trello Clone is a web application inspired by Trello, a popular project management tool. This project provides a similar task management experience with drag-and-drop functionality and multiple views, including Board, Table, Calendar, Timeline, Dashboard, and Map. Users can create and manage tasks, update their status, and access detailed task information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Task management with a Trello-inspired interface.
+- Multiple views for different task management styles.
+- Drag-and-drop functionality for easy task organization.
+- Task details view with the ability to edit and delete tasks.
+- Responsive design for seamless usability on various devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+For a live demonstration of the Trello Clone, please visit  [Demo](https://your-demo-url-here.com).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/tsathish27/trello-clone/assets/119498585/34926646-8e31-4d50-9f0a-e361f6e9c78e)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/tsathish27/trello-clone/assets/119498585/cd1c8a3a-6b9f-47bc-9c62-4636ed4d4451)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Drag & Dropping the tasks
+![image](https://github.com/tsathish27/trello-clone/assets/119498585/30bde272-ae8a-441f-9ccb-97496dc8fdf0)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ ## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Adding a Task
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Click on the "Add a task" input box in the "To Do" column.
+2. Enter the task name and press Enter.
+3. The new task will be added to the "To Do" column.
 
-## Learn More
+### Moving a Task
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Click and drag a task to another column (e.g., from "To Do" to "In Progress").
+2. Release the mouse button to drop the task into the new column.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Task Details
 
-### Code Splitting
+1. Click on a task to view its details.
+2. View task information including name, status, description, and actions for sharing.
+3. Edit or delete the task from the details view.
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ThankYou
 
-### Analyzing the Bundle Size
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
