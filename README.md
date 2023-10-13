@@ -34,6 +34,7 @@ For a live demonstration of the Trello Clone, please visit  [Demo](https://your-
 Drag & Dropping the tasks
 ![image](https://github.com/tsathish27/trello-clone/assets/119498585/30bde272-ae8a-441f-9ccb-97496dc8fdf0)
 
+![image](https://github.com/tsathish27/trello-clone/assets/119498585/608a8339-e348-4b2d-a27f-5348ed27e9b3)
 
 
  ## Usage
