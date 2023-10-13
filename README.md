@@ -9,8 +9,7 @@
 - [Demo](#demo)
 - [Usage](#usage)
 - [Task Details](#task-details)
-- [Contributing](#contributing)
-- [License](#license)
+ 
 
 ## Introduction
 
