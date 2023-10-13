@@ -1,38 +1,434 @@
-.App {
-  text-align: center;
+ /* App.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #005485;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Styles */
+.header {
+  background-color:#1d2125;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 16px 32px;
+  height:35px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Charlie Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  /* justify-content: flex-start; */
+  display: flex;
+  /* position: absolute; (commented out for reference)
+  left: 200px; (commented out for reference)
+  align-items: center; (commented out for reference)
+  align-self: center; (commented out for reference) */
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #b6c2cf;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #00c2e0;
+}
+
+/* .cta button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px; 
+  margin-left: 16px;
+} */
+
+.cta button:hover {
+  text-decoration: underline;
+  /* color: #0079bf; */
+}
+.get-trello-button{
+  background: #579dff;
+  width:250px;
+  position:absolute;
+  right:-5px;
+  top:-5px;
+  height:70px;
+  color: black;
+  font-size:20px;
+  padding: 10px 30px;
+  
+}
+.login-button{
+  font-size: 20px;
+  background:#1d2125;
+  position:absolute;
+  right:300px;
+  top:20px;
+  color: #b6c2cf;
+  background-color:none ;
+  
+}
+.login-button:hover{
+  text-decoration: underline;
+}
+
+/* HeaderLikeDiv.css */
+
+.header-like-div {
+  background-color:#004065;
   color: white;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding:15px 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.earth-icon {
+  font-size:15px;
 }
+
+.board-link,
+.filters-link,
+.profile-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.board-link{
+  background-color:white ;
+  width:60px;
+  height: 20px;
+  color: #004065;
+  border: 1px solid white ;
+  padding: 5px;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.down-arrow{
+  position: relative;
+  left:1%;
+}
+.down-arrow:hover{
+  background-color: #dadce15c;
+}
+ 
+
+#div-h{
+  position: relative;
+  top:5px;
+  left:1050px;
+  padding:10px;
+
+}
+
+/* App.css */
+
+/* .App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+} */
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+  height:fit-content;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  margin: 10px;
+}
+ 
+ 
+
+
+h1 {
+  color: #0079bf;
+  margin-bottom: 20px;
+}
+
+ 
+
+.column {
+  flex: 1;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  background-color:#101204;
+  margin: 10px;
+}
+
+.column h2 {
+  margin: 10px 10PX;
+  color: #99a4af;
+}
+
+.tasks {
+  min-height: 100px;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  background-color:#101204;
+}
+
+.task {
+  background-color: #22272b;
+  color: #99a4af;
+  
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task input {
+  width:50%;
+  padding: 10px;
+  margin-top: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius:10px;
+  padding-right: 50px;
+  margin: 15px;
+}
+
+.add-task input::placeholder {
+  color: #000000;
+}
+
+.add-task input:focus {
+  outline: none;
+}
+
+.popup {
+  position: absolute;
+  background-color: #282e33;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* border: 1px solid #ccc; */
+  padding: 16px;
+  z-index: 1;
+  width:280px;
+  height:400px;
+  left:350px;
+  top:130px;
+  border-radius: 10px;
+}
+
+.popup-title {
+  font-size: 15px;
+  margin: 12px;
+  color:#99a4af; 
+  position: relative;
+  top:5px;
+  left:20%;
+}
+.text1{
+  font-size: 15px;
+  margin: 12px;
+  color:#99a4af; 
+  position: relative;
+}
+
+.popup ul {
+  list-style: none;
+  padding:18px;
+}
+
+#popp{
+  margin-right:20px; 
+}
+#poppp{
+  margin-left:20px;
+  vertical-align: middle; 
+}
+/* h3 i {
+  margin-left: 15px; 
+} */
+.popup ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  
+color:#99a4af; 
+}
+
+.popup p {
+  font-size: 14px;
+  color:#99a4af;
+  margin-top: 16px;
+  
+}
+.popup a{
+  text-decoration: none;
+  font-size: 14px;
+  color:#99a4af;
+  position: relative;
+  bottom:-15px;
+  left:12%;
+}
+.popup a:hover{
+  text-decoration: underline;
+}
+#earth:hover{
+  opacity:60%;
+}
+
+.popupp {
+  width:750px;
+  height:550px;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#323940;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #99a4af;
+  /* max-width: 400px; */
+}
+/* Style for the popup container */
+ 
+/* Style for the title */
+/* .popupp-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none; /* Remove the default link underline */
+/* } */ */
+
+.popupp-title a {
+  color: #333;
+  position: relative;
+  bottom: 40px;
+}
+
+.popupp-title i {
+  margin-left: 5px;
+}
+#x-mark{
+  position: relative;
+  left:90%;
+  font-size: 30px;
+}
+#x-mark:hover{
+  background-color: #22272b;
+  padding:5px;
+}
+.t-icon{
+  position: relative;
+  top:-50px;
+  left: 50px;
+  font-size: 25px;
+}
+.desp{
+  position: relative;
+  left: 50px;
+  top:20px; 
+  font-size: 18px;
+}
+.action-i{
+  position: relative;
+  left:600px;
+}
+#share-icon{
+  position: relative;
+  left:540px;
+  top:36px;
+  background: #45505a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.acti{
+  position: relative;
+  left: 50px;
+  top:120px; 
+  font-size: 18px;
+}
+.popupp div {
+  margin-bottom: 10px;
+}
+
+/* Style for the icon and content */
+.popupp strong i {
+  margin-right: 5px;
+  
+}
+
+/* Style for the description section */
+.desp {
+  display: flex;
+  align-items: center;
+}
+
+#des-icon {
+  margin-right: 5px;
+}
+
+ 
+.popupp button i {
+  margin-right: 5px;
+}
+
+/* Hover effect for buttons */
+.popupp button:hover {
+  background: #0056b3;
+}
+
+
+ 
+ 
